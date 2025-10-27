@@ -14,7 +14,12 @@ jobs:
         run: echo "Hello World"
 
       - name: 여러 명령어 문장 작성하기
-        run:
+        run: |
           echo "Good"
           echo "Day"
           echo "Everybody"
+
+      - name: Github Actions 자체 저장된 변수 사용하기
+        run: |
+          echo $GTIHUB_SHA
+          echo $GTIHUB_REPOSITORY
